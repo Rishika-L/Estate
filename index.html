@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTATE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: rgb(0, 185, 142); font-size: 30px; font-weight: bold;">
+                <img src="images/icon-deal.png" alt="Makaan Logo" class="navbar-logo"> Makaan
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProperty" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PROPERTY
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownProperty">
+                            <li><a class="dropdown-item" href="#">Property List</a></li>
+                            <li><a class="dropdown-item" href="#">Property Agents</a></li>
+                            <li><a class="dropdown-item" href="#">Property Type</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownPages">
+                            <li><a class="dropdown-item" href="#">testimonial</a></li>
+                            <li><a class="dropdown-item" href="#">404 Error</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-add-property">Add Property</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---HOME-->
+    <section class="home-section">
+        <div class="home-content">
+            <h1>Find A <span style="color: rgb(0, 185, 142); font-size: 50px; font-weight: bold;">Perfect Home </span>To
+                Live With Your Family</h1>
+            <p>Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita
+                et kasd rebum sea elitr.</p>
+            <button class="btn-get-started">Get Started</button>
+        </div>
+        <div class="home-image">
+            <img src="images/carousel-1.jpg" alt="Home Image">
+            <img src="images/carousel-2.jpg" alt="Home Image">
+        </div>
+        <button class="scroll-to-top" onclick="scrollToTop()" style="background-color: rgb(0, 185, 142)">↑</button>
+    </section>
+
+    <section class="search-section">
+        <form class="search-form">
+            <input type="text" class="form-control" placeholder="Search Keyword">
+            <select class="form-control">
+                <option value="">Property Type</option>
+                <option value="apartment">Apartment</option>
+                <option value="house">House</option>
+                <option value="commercial">Commercial</option>
+            </select>
+            <select class="form-control">
+                <option value="">Location</option>
+                <option value="namakkal">Namakkal</option>
+                <option value="chennai">Chennai</option>
+                <option value="bangalore">Bangalore</option>
+            </select>
+            <button type="submit" class="btn">Search</button>
+        </form>
+    </section>
+
+
+    <div class="property-types">
+        <h2>Property Types</h2>
+        <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd <br> vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+    
+        <div class="property-grid">
+            <!-- Property Type Box -->
+            <div class="property-box">
+                <div class="icon"><img src="./images/icon-apartment.png" alt="Apartment"></div>
+                <h3>Apartment</h3>
+                <p>123 Properties</p>
+            </div>
+            
+            <div class="property-box">
+                <div class="icon"><img src="./images/icon-villa.png" alt="Villa"></div>
+                <h3>Villa</h3>
+                <p>123 Properties</p>
+            </div>
+    
+            <div class="property-box">
+                <div class="icon"><img src="./images/icon-house.png" alt="Home"></div>
+                <h3>Home</h3>
+                <p>123 Properties</p>
+            </div>
+    
+            <div class="property-box">
+                <div class="icon"><img src="./images/icon-housing.png" alt="Office"></div>
+                <h3>Office</h3>
+                <p>123 Properties</p>
+            </div>
+    
+            <div class="property-box">
+                <div class="icon"><img src="./images/icon-building.png" alt="Building"></div>
+                <h3>Building</h3>
+                <p>123 Properties</p>
+            </div>
+    
+            <div class="property-box">
+                <div class="icon"><img src="./images/icon-neighborhood.png" alt="Townhouse"></div>
+                <h3>Townhouse</h3>
+                <p>123 Properties</p>
+            </div>
+    
+            <div class="property-box">
+                <div class="icon"><img src="./images/icon-condominium.png" alt="Shop"></div>
+                <h3>Shop</h3>
+                <p>123 Properties</p>
+            </div>
+    
+            <div class="property-box">
+                <div class="icon"><img src="./images/icon-luxury.png" alt="Garage"></div>
+                <h3>Garage</h3>
+                <p>123 Properties</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="property-section">
+        <div class="property-container">
+            <div class="property-image">
+                <img src="./images/about.jpg" alt="Luxury House">
+            </div>
+            <div class="property-content">
+                <h2>#1 Place To Find The Perfect Property</h2>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.</p>
+                
+                <ul class="property-list">
+                    <li><i class="fas fa-check-circle"></i> Tempor erat elitr rebum at clita</li>
+                    <li><i class="fas fa-check-circle"></i> Aliqu diam amet diam et eos</li>
+                    <li><i class="fas fa-check-circle"></i> Clita duo justo magna dolore erat amet</li>
+                </ul>
+                <button type="button" class="btn h-25 w-25 text-center ps-auto" style="background-color: rgb(0, 185, 142);">Read More</button>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--PROPERTY TYPES-->
+
+    <section class="property-listing">
+        <h2>Property Listing</h2>
+        <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore <br>lorem kasd vero ipsum sit eirmod sit
+            diam justo sed rebum.</p>
+        <div class="property-filters">
+            <button class="active"  style="background-color: rgb(0, 185, 142)">Featured</button>
+            <button>For Sell</button>
+            <button>For Rent</button>
+        </div>
+        <div class="property-cards">
+            <div class="property-card">
+                <div class="property-card-image">
+                    <img src="./images/property-1.jpg" alt="Property 1">
+                    <span class="property-card-label" style="background-color: rgb(0, 185, 142)">For Sell</span>
+                </div>
+                <div class="property-card-content">
+                    <span class="property-card-type" style="color: rgb(0, 185, 142)">Appartment</span>
+                    <div class="property-card-price" style="color: rgb(0, 185, 142); font-weight: bold;"  >$12,345</div>
+                    <div class="property-card-title" style="font-size: 17px; font-weight: bold;">Golden Urban House For Sell</div>
+                    <div class="property-card-address"><i class="fa-solid fa-location-dot" style="color: rgb(0, 185, 142)"></i>123 Street, New York, USA</div>
+                    <div class="property-card-details">
+                        <span><i class="fas fa-ruler-combined" style="color: rgb(0, 185, 142)"></i> L1000 Sqft</span>
+                        <span><i class="fas fa-bed" style="color: rgb(0, 185, 142)"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath" style="color: rgb(0, 185, 142)"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="property-card-image">
+                    <img src="./images/property-2.jpg" alt="Property 1">
+                    <span class="property-card-label" style="background-color: rgb(0, 185, 142)">For Sell</span>
+                </div>
+                <div class="property-card-content">
+                    <span class="property-card-type" style="color: rgb(0, 185, 142)">Villa</span>
+                    <div class="property-card-price" style="color: rgb(0, 185, 142); font-weight: bold;"  >$12,345</div>
+                    <div class="property-card-title" style="font-size: 17px; font-weight: bold;">Golden Urban House For Sell</div>
+                    <div class="property-card-address"><i class="fa-solid fa-location-dot" style="color: rgb(0, 185, 142)"></i>123 Street, New York, USA</div>
+                    <div class="property-card-details">
+                        <span><i class="fas fa-ruler-combined" style="color: rgb(0, 185, 142)"></i> L1000 Sqft</span>
+                        <span><i class="fas fa-bed" style="color: rgb(0, 185, 142)"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath" style="color: rgb(0, 185, 142)"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="property-card-image">
+                    <img src="./images/property-3.jpg" alt="Property 1">
+                    <span class="property-card-label" style="background-color: rgb(0, 185, 142)">For Sell</span>
+                </div>
+                <div class="property-card-content">
+                    <span class="property-card-type" style="color: rgb(0, 185, 142)">Office</span>
+                    <div class="property-card-price" style="color: rgb(0, 185, 142); font-weight: bold;"  >$12,345</div>
+                    <div class="property-card-title" style="font-size: 17px; font-weight: bold;">Golden Urban House For Sell</div>
+                    <div class="property-card-address"><i class="fa-solid fa-location-dot" style="color: rgb(0, 185, 142)"></i>123 Street, New York, USA</div>
+                    <div class="property-card-details">
+                        <span><i class="fas fa-ruler-combined" style="color: rgb(0, 185, 142)"></i> L1000 Sqft</span>
+                        <span><i class="fas fa-bed" style="color: rgb(0, 185, 142)"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath" style="color: rgb(0, 185, 142)"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="property-card-image">
+                    <img src="./images/property-4.jpg" alt="Property 1">
+                    <span class="property-card-label" style="background-color: rgb(0, 185, 142)">For Sell</span>
+                </div>
+                <div class="property-card-content">
+                    <span class="property-card-type" style="color: rgb(0, 185, 142)">Building</span>
+                    <div class="property-card-price" style="color: rgb(0, 185, 142); font-weight: bold;"  >$12,345</div>
+                    <div class="property-card-title" style="font-size: 17px; font-weight: bold;">Golden Urban House For Sell</div>
+                    <div class="property-card-address"><i class="fa-solid fa-location-dot" style="color: rgb(0, 185, 142)"></i>123 Street, New York, USA</div>
+                    <div class="property-card-details">
+                        <span><i class="fas fa-ruler-combined" style="color: rgb(0, 185, 142)"></i> L1000 Sqft</span>
+                        <span><i class="fas fa-bed" style="color: rgb(0, 185, 142)"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath" style="color: rgb(0, 185, 142)"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="property-card-image">
+                    <img src="./images/property-5.jpg" alt="Property 1">
+                    <span class="property-card-label" style="background-color: rgb(0, 185, 142)">For Sell</span>
+                </div>
+                <div class="property-card-content">
+                    <span class="property-card-type" style="color: rgb(0, 185, 142)">Home</span>
+                    <div class="property-card-price" style="color: rgb(0, 185, 142); font-weight: bold;"  >$12,345</div>
+                    <div class="property-card-title" style="font-size: 17px; font-weight: bold;">Golden Urban House For Sell</div>
+                    <div class="property-card-address"><i class="fa-solid fa-location-dot" style="color: rgb(0, 185, 142)"></i>123 Street, New York, USA</div>
+                    <div class="property-card-details">
+                        <span><i class="fas fa-ruler-combined" style="color: rgb(0, 185, 142)"></i> L1000 Sqft</span>
+                        <span><i class="fas fa-bed" style="color: rgb(0, 185, 142)"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath" style="color: rgb(0, 185, 142)"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="property-card-image">
+                    <img src="./images/property-6.jpg" alt="Property 1">
+                    <span class="property-card-label" style="background-color: rgb(0, 185, 142)">For Sell</span>
+                </div>
+                <div class="property-card-content">
+                    <span class="property-card-type" style="color: rgb(0, 185, 142)">Shop</span>
+                    <div class="property-card-price" style="color: rgb(0, 185, 142); font-weight: bold;"  >$12,345</div>
+                    <div class="property-card-title" style="font-size: 17px; font-weight: bold;">Golden Urban House For Sell</div>
+                    <div class="property-card-address"><i class="fa-solid fa-location-dot" style="color: rgb(0, 185, 142)"></i>123 Street, New York, USA</div>
+                    <div class="property-card-details">
+                        <span><i class="fas fa-ruler-combined" style="color: rgb(0, 185, 142)"></i> L1000 Sqft</span>
+                        <span><i class="fas fa-bed" style="color: rgb(0, 185, 142)"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath" style="color: rgb(0, 185, 142)"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+            <div class="property-filters">
+                <button class="active"  style="background-color: rgb(0, 185, 142)">Browse More Property</button>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="contact-agent">
+        <div class="contact-container">
+            <div class="agent-image">
+                <img src="images/call-to-action.jpg" alt="Certified Agent">
+            </div>
+            <div class="agent-info">
+                <h2>Contact With Our Certified Agent</h2>
+                <p>
+                    Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem kasd vero ipsum sit sit diam justo sed vero dolor duo.
+                </p>
+                <div class="buttons">
+                    <a href="#" class="btn call-btn"><i class="fas fa-phone-alt"></i> Make A Call</a>
+                    <a href="#" class="btn appointment-btn"><i class="fas fa-calendar-alt"></i> Get Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<!--AGENT-->
+<div class="property-agents">
+    <h2>Property Agents</h2>
+    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd <br> vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+    <div class="agent-cards">
+        <div class="agent-card">
+            <img src="./images/team-1.jpg" alt="Agent 1">
+            <h3>Full Name</h3>
+            <p>Designation</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="agent-card">
+            <img src="./images/team-2.jpg" alt="Agent 2">
+            <h3>Full Name</h3>
+            <p>Designation</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="agent-card">
+            <img src="./images/team-3.jpg" alt="Agent 3">
+            <h3>Full Name</h3>
+            <p>Designation</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="agent-card">
+            <img src="./images/team-4.jpg" alt="Agent 4">
+            <h3>Full Name</h3>
+            <p>Designation</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="mb-3">Our Clients Say!</h1>
+                <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item bg-light rounded p-3">
+                    <div class="bg-white border rounded p-4">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="images/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light rounded p-3">
+                    <div class="bg-white border rounded p-4">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="images/testimonial-2.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light rounded p-3">
+                    <div class="bg-white border rounded p-4">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="images/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" id="footer">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link text-white-50" href="" style="text-decoration: none;">About Us</a>
+                    <a class="btn btn-link text-white-50" href="" style="text-decoration: none;">Contact Us</a>
+                    <a class="btn btn-link text-white-50" href="" style="text-decoration: none;">Our Services</a>
+                    <a class="btn btn-link text-white-50" href="" style="text-decoration: none;">Privacy Policy</a>
+                    <a class="btn btn-link text-white-50" href="" style="text-decoration: none;">Terms & Condition</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Photo Gallery</h5>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="images/property-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="images/property-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="images/property-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="images/property-4.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="images/property-5.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="images/property-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" style="color: white"; type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" style="text-decoration: none;" href="#" >Makaan</a>, All Right Reserved. Designed By RISHI LS</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="" style="text-decoration: none;">Home</a>
+                            <a href="" style="text-decoration: none;">About</a>
+                            <a href="" style="text-decoration: none;">Pages</a>
+                            <a href="" style="text-decoration: none;">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
